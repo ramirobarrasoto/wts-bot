@@ -3,4 +3,6 @@ __pycache__/
 .env
 credentials.json
 .wwebjs_auth/
+.DS_Store
+.wwebjs_cache/
 node_modules/
