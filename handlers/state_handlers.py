@@ -1,4 +1,4 @@
-#from utils.sheet_service import append_to_sheet
+from utils.sheet_service import append_to_sheet
 from handlers.submenu_builders import (
     handle_submenu_technical,
     handle_submenu_replenishment,
@@ -54,7 +54,6 @@ def handle_waiting_for_subcategory(message, user_data):
     user_data["subcategory"] = message.strip()
     return "Got it! You can now reply with an optional comment or photo for backup.", "waiting_for_comment"
 
-"""
 def handle_waiting_for_comment(message, user_data):
     user_data["comment"] = message.strip()
 
@@ -66,4 +65,4 @@ def handle_waiting_for_comment(message, user_data):
     ])
 
     return f"✅ Report saved for Room {user_data['room_number']}. Thank you!", "done"
-    """
+
